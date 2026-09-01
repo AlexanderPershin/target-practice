@@ -212,7 +212,7 @@ class Game:
 
         y_offset = 10
         for line in gui_texts:
-            surf = self.font.render(line, True, (220, 220, 220))
+            surf = self.font.render(line, True, self.config.gui_text_color)
             self.screen.blit(surf, (15, y_offset))
             y_offset += 30
 
